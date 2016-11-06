@@ -8,11 +8,17 @@ nnoremap <C-l> <C-w>l
 map <F8> :call RunGdb(  )<CR>
 func! RunGdb(  ) 
 	exec "w"
-	exec "! g++ % -std=c++11 -o %<"
-	exec "! ./%<"
+	if &filetype == 'cpp'
+		exec "! g++ % -std=c++11 -o %<"
+		exec "! ./%<"
+	elseif &filetype == 'python'
+		exec "! python ./%"
+	elseif &filetype == 'sh'
+		exec "! sh ./%"
+	endif
 endfunc 
 
-set cindent
+set autoindent
 
 map <F5> :exec "split"<CR>
 map <F6> :exec "vsplit"<CR>
@@ -25,3 +31,14 @@ func! Make(  )
 endfunc
 
 set history=10000
+
+set background=dark
+colorscheme koehler
+
+map <F7> :exec "!"<CR>
+
+set completeopt=preview,menu
+
+set nocompatible
+
+inoremap <C-c> <esc>
