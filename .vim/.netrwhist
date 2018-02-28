@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/amadeus/academic_materials/Semester_Spring2017/Mathematical_Experimentation/report_of_EXP/EXP_5'
+let g:netrw_dirhist_2='/Users/amadeus/academic_materials/Semester_Spring2017/Introduction_to_Artificial_Intelligence/HA3/cnn2/cnn2_11/mnist'
+let g:netrw_dirhist_3='/Users/amadeus/Documents/template'
+let g:netrw_dirhist_4='/Users/amadeus/academic_materials/Semester_Summer2017/Java/code/tutorial'
+let g:netrw_dirhist_5='/Users/amadeus/academic_materials/Semester_Summer2017/Java/code/tutorial/testapplet'
+let g:netrw_dirhist_6='/Users/amadeus/academic_materials/Semester_Fall2017/Artificial_Neural_Networks/assignments/assignment1/HW1/MlpOnMNIST/codes/models'
+let g:netrw_dirhist_7='/Users/amadeus/academic_materials/Semester_Fall2017/Compilers/projects/PA1-A/PA1-A/src/decaf/utils'
